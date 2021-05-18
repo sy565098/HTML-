@@ -1,0 +1,111 @@
+html，xml，xhtml
+Html：是一个超文本标记语言，一个文件，其中有很多的字符串，用相关的格式读取字符串，然后进行渲染页面。语法较为松散，不严格，web语言
+1997.1   Html  3.2版本
+1997.12  Html  4.0版本
+1999.12  html  4.01版本
+2014.10  html  5.0版本
+
+
+Xml：可扩展标记语言，主要用于存储数据合结构参考
+自定义标签，与html中标签完全不同。
+XHtml：可扩展超文本标记语言，基于Xml，作用与Html类似，但是语法更加严格。
+
+Html-css-js：表现（内容）、样式、行为分离
+1.写html时，重点需要放在结构和语义化上，需让html能体现页面结构或者内容，之后才去写样式。（）
+2.写JS的时候，尽量不要用js去直接操作样式，而是通过给元素添加删除class来控制样式变化。
+3.Html内不允许出现属性样式，尽量不要出现行内样式。
+
+语义化HTML
+一种编写html方式，选择合适的标签，使用合理的代码结构，便于开发者阅读，同时让浏览器的爬虫和机器很好的解析出来。
+
+
+
+HTML的标签、属性
+常见的标签：
+*h1代表页面中最大的标题。
+*h2二级标题。
+*h3..更低级的标题。
+*p 段落，表示大段文字。
+*a  链接，连接到一个地址：
+1.<a href=’’ target=_blank” title=’’(提示名字)></a>
+2.<a href=”#”></a>
+3.<a href=”#111”></a>  点击时会跳转到当前网页某个名字的链接
+
+Img
+<img src=”图片路径” alt=“名称”（用户可看）  自闭和标签
+
+Div
+语义为区块，用于给页面划分区块，让结构更清晰。
+Div id= “xxx”
+Div class=”xxx”代表一类的class
+
+Ul li：
+Ul无序列表 
+用于表示并列内容
+Ul直接子元素是li
+可以嵌套
+
+
+
+Ol li：
+Ol 有序列表
+表示带步骤或者编号的并列内容
+
+Dl dt dd
+用于展示一系列“标题、内容等”
+
+Button：
+按钮
+
+Strong 、 em、  span。功能基本相同
+Strong：语义较重。
+Span：加标记。无语义
+Em：语义稍弱一些
+
+Iframe：用于当前页面嵌入一个页面，注意跨域操作问题
+
+
+Table
+用于展示表格，不要用来做布局thead tbody tfoot可省略
+tr行 th 表头单元格  td单元格
+
+标签要小些，闭合标签需要完整/。自闭合无需/
+编码要有层次感，标题中不能又段落，段落中不能有标题
+
+Form action=“提交到的地址”method=“Post与get”
+Post与get的区别：get得到，post传输
+Get：会将信息组装到一起链接到url传输给后台服务器
+Post：直接传输到后台服务器
+Post相对更加安全、保密
+Get安全性要求小
+
+
+Input type=text name=password
+Password=以圆点的方式呈现
+
+Checkbox  多选
+Input type=checkbox name=“xxx” value=“xxx”
+name是一个分组的话建议同名称
+Value需要设置好
+Radio单选
+Input type=radio name=“xxx” value=“xxx”
+Name不同时是不同分组，分组可以选择
+
+<Label for=”xxx”>  点击此处即可输入	
+
+File 文件上传：
+Input type=file name=“xxx” accept=“”限制文件格式
+
+Select：
+Select name=city（select id=”input_select）默认第一个选项
+<Option value=属性值> xxx </option>
+
+多行文本：
+<Text area name=article> 
+
+Input type=hideen  name=  value=  暂存一些信息（用户无法看见），，安全策略的时候用到
+Input type=button  普通按钮
+Input type=submit  提交按钮
+Input type=reset 重置按钮
+
+Placeholder=xxx   展示，输入时即消失
