@@ -1,0 +1,47 @@
+表格
+table表格标签  border 边框  width 宽  height 高
+coption 表格标题
+tr  表格单元行
+th  表头单元格
+td  单元格
+
+colspan属性
+用来设置td或者th的列跨度
+rowspan属性
+用来设置td或者th的行跨度
+
+rowspan和colspan可以同时存在
+
+
+表格的其他特性
+thead 定义表头
+tbody 定义表核心内容
+tfoot  定义表脚，汇总行
+
+cellpadding
+定义表格单元的内容和边框之间的空间，废弃，css替代
+cellspacing
+定义两个单元格之间空间的大小，废弃，css替代
+
+表格中的width、height属性
+width属性
+1.给table标签设置属性，可以调整表格的宽度，未进行设置时，宽度由内容撑开
+2.给td设置时，可以调整该td所在列的宽度
+3.给tr设置时，属性无效
+height属性
+通常设置在tr或者table标签上，，用以调整高度
+与width属性是一样的
+注意事项：
+1.width、height属性值的单位默认是px，可以省略
+2.width和height的属性值只有设置的比默认高度默认宽度大，才会有效果
+
+表格中的align属性
+1.给table设置align属性，可以调整table整体的水平位置
+	属性有三个，分别是left、center、right
+2.给tr设置align属性时，可以统一设置该行所有td中内容的水平对齐方式，
+常用的属性hi是left，center，right
+3.也可以给单独的某个td设置align属性，调整该td中内容的水平对齐方式
+
+表格可以嵌套，嵌套的表格需要写在td当中
+
+border边框，需要设置在table中才能生效。
